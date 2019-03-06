@@ -20,29 +20,29 @@ export class SearchLocationPage {
       },
       {
         id: 2,
-        name: "Rio de Janeiro, Brazil"
+        name: "Envigado"
       },
       {
         id: 3,
-        name: "São Paulo, Brazil"
+        name: "Itagui"
       },
       {
         id: 4,
-        name: "New York, United States"
+        name: "Sabaneta"
       },
       {
         id: 5,
-        name: "London, United Kingdom"
+        name: "Belen"
       },
       {
         id: 6,
-        name: "Same as pickup"
+        name: "Bello"
       }
     ],
     recent: [
       {
         id: 1,
-        name: "Rio de Janeiro"
+        name: "Envigado"
       }
     ]
   };

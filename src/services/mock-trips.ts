@@ -1,7 +1,7 @@
 export let TRIPS = [
   {
     id: 1,
-    name: "Copacabana Beach",
+    name: "Parque de envigado",
     price_adult: 60,
     price_child: 30,
     time: "12h",
@@ -9,8 +9,8 @@ export let TRIPS = [
     electric_voucher: 1,
     sub_name: "English Commentary Tour",
     thumb: "assets/img/trip/thumb/trip_1.jpg",
-    description: "From sexy Ipanema and Copacabana, to more secluded and slightly lesser-known stretches of sand, like Prainha Beach, Brazil's Rio de Janeiro is best known for its beaches. Grab your sunscreen and Brazilian bikinis and head to the sunny shores of Rio's best beaches.",
-    location: "Rio de Janeiro, Brazil",
+    description: "Lugar excelente para entrenar las diciplicas que cuenta con tubos, muros y corredores amplios",
+    location: "Envigado",
     images: [
       "assets/img/trip/thumb/trip_5.jpg",
       "assets/img/trip/thumb/trip_6.jpg",
@@ -18,16 +18,14 @@ export let TRIPS = [
       "assets/img/trip/thumb/trip_8.jpg",
     ],
     highlights: [
-      "Numerous kiosks",
-      "First in a string of Atlantic Ocean-facing beaches",
-      "Sand is flanked by mountains in the background",
-      "Swing in the turquoise waters",
-      "Water Sports",
+      "Parkour",
+      "Skate",
+      "Roller"
     ]
   },
   {
     id: 2,
-    name: "Christ the Redeemer",
+    name: "Polideportivo Sur de Envigado",
     price_adult: 90,
     price_child: 45,
     time: "4h",
@@ -35,10 +33,16 @@ export let TRIPS = [
     electric_voucher: 1,
     sub_name: "English Commentary Tour",
     thumb: "assets/img/trip/thumb/trip_2.jpg",
-    description: "From sexy Ipanema and Copacabana, to more secluded and slightly lesser-known stretches of sand, like Prainha Beach, Brazil's Rio de Janeiro is best known for its beaches. Grab your sunscreen and Brazilian bikinis and head to the sunny shores of Rio's best beaches.",
-    location: "Rio de Janeiro, Brazil",
+    description: "Espacio deportivo con muchos retos y con materiales para entrenar cualquier diciplica deportiva",
+    location: "Envigado",
     images: [],
-    highlights: []
+    highlights: [
+      "Parkour",
+      "Skate",
+      "Roller",
+      "SlackLine",
+      "StreetWorkout"
+    ]
   },
   {
     id: 3,
@@ -51,7 +55,7 @@ export let TRIPS = [
     sub_name: "English Commentary Tour",
     thumb: "assets/img/trip/thumb/trip_3.jpg",
     description: "From sexy Ipanema and Copacabana, to more secluded and slightly lesser-known stretches of sand, like Prainha Beach, Brazil's Rio de Janeiro is best known for its beaches. Grab your sunscreen and Brazilian bikinis and head to the sunny shores of Rio's best beaches.",
-    location: "São Paulo, Brazil",
+    location: "Unidad deportiva de Belen",
     images: [],
     highlights: []
   },
@@ -66,7 +70,7 @@ export let TRIPS = [
     sub_name: "English Commentary Tour",
     thumb: "assets/img/trip/thumb/trip_4.jpg",
     description: "From sexy Ipanema and Copacabana, to more secluded and slightly lesser-known stretches of sand, like Prainha Beach, Brazil's Rio de Janeiro is best known for its beaches. Grab your sunscreen and Brazilian bikinis and head to the sunny shores of Rio's best beaches.",
-    location: "Fernando de Noronha, Brazil",
+    location: "Unidad deportiva Mariana Pajón",
     images: [],
     highlights: []
   }

@@ -16,7 +16,7 @@ import {SearchLocationPage} from "../search-location/search-location";
 export class HomePage {
   // search condition
   public search = {
-    name: "Rio de Janeiro, Brazil",
+    name: "Polideportivo Sur de Envigado",
     date: new Date().toISOString()
   }
 
@@ -28,7 +28,7 @@ export class HomePage {
     // this.search.dropOff = "Same as pickup";
     this.storage.get('pickup').then((val) => {
       if (val === null) {
-        this.search.name = "Rio de Janeiro, Brazil"
+        this.search.name = "Envigado"
       } else {
         this.search.name = val;
       }
