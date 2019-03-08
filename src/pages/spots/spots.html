@@ -1,0 +1,34 @@
+<!-- -->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      <span ion-text>Spots Encontrados</span>
+    </ion-title>
+  </ion-navbar>
+
+  <!--  -->
+  <ion-toolbar padding color="light">
+    <p ion-text no-margin class="text-white">
+      <strong>4</strong> Resultados!
+    </p>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding class="trips detail-bg">
+  <!--list of trips-->
+  <div class="trip card" *ngFor="let spot of spots" tappable (click)="viewDetail(spot.codigo)" margin-bottom>
+    <div class="background border-bottom" [ngStyle]="{'background-image': 'url(' + spot.thumb + ')'}">
+      <div class="background-filter rlt">
+        <div class="align-bottom" padding-left padding-right>
+          <h6 class="pull-left text-white" ion-text>{{ spot.nombre }}</h6>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="padding-sm primary-bg">
+      <ion-icon name="time" class="text-white"></ion-icon>
+      <span ion-text class="text-white">{{ spot.time }}</span>
+    </div>
+  </div>
+</ion-content>

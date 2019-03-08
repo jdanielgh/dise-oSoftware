@@ -9,7 +9,8 @@ import {HomePage} from "../home/home";
 })
 export class CheckoutTripPage {
   // trip data
-  public trip: any;
+  public spots: any;
+  public spot: any;
   // number of adults
   public adults = 2;
   // date
@@ -19,20 +20,21 @@ export class CheckoutTripPage {
 
   constructor(public nav: NavController, public tripService: TripService, public loadingCtrl: LoadingController, public toastCtrl: ToastController) {
     // set sample data
-    this.trip = tripService.getItem(1);
+    this.spots = tripService.getAll();
+    this.spot = this.spots[1];
   }
 
   // process send button
   send() {
     // send booking info
     let loader = this.loadingCtrl.create({
-      content: "Please wait..."
+      content: "Por favor espere..."
     });
     // show message
     let toast = this.toastCtrl.create({
       showCloseButton: true,
       cssClass: 'profile-bg',
-      message: 'Book Activity Success!',
+      message: 'Reserva Exitosa!',
       duration: 3000,
       position: 'bottom'
     });

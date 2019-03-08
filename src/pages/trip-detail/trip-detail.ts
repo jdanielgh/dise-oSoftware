@@ -10,6 +10,7 @@ import {CheckoutTripPage} from "../checkout-trip/checkout-trip";
 export class TripDetailPage {
   // trip info
   public trip: any;
+  public spots: any;
   // number of adult
   public adults = 2;
   // number of children
@@ -17,7 +18,8 @@ export class TripDetailPage {
 
   constructor(public nav: NavController, public tripService: TripService) {
     // set sample data
-    this.trip = tripService.getItem(1);
+    this.spots = tripService.getAll();
+    this.trip = this.spots[0];
   }
 
   // minus adult when click minus button

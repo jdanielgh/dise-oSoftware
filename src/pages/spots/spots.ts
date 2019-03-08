@@ -5,15 +5,15 @@ import {TripDetailPage} from "../trip-detail/trip-detail";
 
 @Component({
   selector: 'page-trips',
-  templateUrl: 'trips.html'
+  templateUrl: 'spots.html'
 })
-export class TripsPage {
-  // list of trips
-  public trips: any;
+export class SpotsPage {
+  // list of spots
+  public spots: any;
 
   constructor(public nav: NavController, public tripService: TripService) {
     // set sample data
-    this.trips = tripService.getAll();
+    this.spots = tripService.getAll();
   }
 
   // view trip detail

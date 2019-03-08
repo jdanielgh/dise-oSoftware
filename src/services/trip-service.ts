@@ -1,28 +1,28 @@
 import {Injectable} from "@angular/core";
-import {TRIPS} from "./mock-trips";
+import {SPOTS} from "./mock-trips";
 
 @Injectable()
 export class TripService {
-  private trips: any;
+  private spots: any;
 
   constructor() {
-    this.trips = TRIPS;
+    this.spots = SPOTS;
   }
 
   getAll() {
-    return this.trips;
+    return this.spots;
   }
 
   getItem(id) {
-    for (var i = 0; i < this.trips.length; i++) {
-      if (this.trips[i].id === parseInt(id)) {
-        return this.trips[i];
+    for (var i = 0; i < this.spots.length; i++) {
+      if (this.spots[i].id === parseInt(id)) {
+        return this.spots[i];
       }
     }
     return null;
   }
 
   remove(item) {
-    this.trips.splice(this.trips.indexOf(item), 1);
+    this.spots.splice(this.spots.indexOf(item), 1);
   }
 }
