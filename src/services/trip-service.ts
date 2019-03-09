@@ -15,7 +15,7 @@ export class TripService {
 
   getItem(id) {
     for (var i = 0; i < this.spots.length; i++) {
-      if (this.spots[i].id === parseInt(id)) {
+      if (this.spots[i].codigo === parseInt(id)) {
         return this.spots[i];
       }
     }
